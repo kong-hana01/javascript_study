@@ -5,7 +5,7 @@
 // added ECMAscript 5
 'use strick';
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let (added in ES6)
 let globalName = 'global name';
 
@@ -30,13 +30,21 @@ var age;
 console.log(age);
 
 
-// 3. Constants
+// 3. Constant, r(read only)
+// use const whenever possible
+// only use let if variable needs to change.
+const daysInWeek = 7;
+const maxNumber = 5;
+
+
+// Note!
+// Immutable data types: primitive types, frozen objects (i.e. object.freeze()) (hanbin에서 hanbon으로 바꿀 경우 i만 바꾸는 것이 아닌 hanbin -> hanbon으로 바꾸기 때문에 string은 immutable data type이다.)
+// Mutable data types: all objects by defaults are mutable in JS (Object의 내부 값을 바꿀 수 있다.)
+// 둘의 차이는 내부적으로 변경이 가능한지를 판단.
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety
 // - reduce human mistakes
-const daysInWeek = 7;
-const maxNumber = 5;
 
 // 4. Variable types
 // primitive, single item: number, string, boolean, null, undefined, symbol
