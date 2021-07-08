@@ -119,7 +119,7 @@ if (name === 'coder') {
     console.log('unkwnon');
 }
 
-// tenrary operator: ?
+// 9. tenrary operator: ?
 // condition ? value1 : value2;
 console.log(name === 'ellie' ? 'yes' : 'no')
 
@@ -157,7 +157,7 @@ do {
     i--;
 } while (i > 0);
 
-// 12. for loop, for(begin; condition; step)
+// 12. for loop, for (begin; condition; step)
 for (i = 3; i > 0; i--) {
     console.log(`for: ${i}`);
 }
@@ -175,7 +175,7 @@ for (let i = 0; i < 10; i++){
 }
 
 // break continue
-// Q1. iterate from 0 to 10 and pring only even numbers (use continue)
+// Q1. iterate from 0 to 10 and print only even numbers (use continue)
 console.log('Q1')
 for (i = 0; i <= 10; i++){
     if (i % 2 == 1) {
@@ -184,7 +184,7 @@ for (i = 0; i <= 10; i++){
     console.log(`${i}`)
 }
 
-// Q2. iterate from 0 to 10 and pring numbers until reaching 8 (use break)
+// Q2. iterate from 0 to 10 and print numbers until reaching 8 (use break)
 console.log('\nQ2')
 for (i = 0; i < 10; i++){
     if (i == 8) {
